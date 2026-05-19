@@ -14,11 +14,7 @@ int customPrintf(const char *string, ...){
             }
             else{
                 specifier = string[i + 1];
-                switch(specifier){
-                    case 'd':
-                        int num = va_arg(args, int);
-                        printInt(num);
-                    }
+                
                 i++;
             }
             
@@ -32,12 +28,4 @@ int customPrintf(const char *string, ...){
     va_end(args);
 
     return 0;
-}
-
-void printChar(char c){
-    write(1, &c, 1);
-}
-void printInt(int d){
-    char digit = d + '0';
-    write(1, &digit, 1);
 }
