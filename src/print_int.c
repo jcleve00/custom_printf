@@ -1,6 +1,5 @@
 #include "custom_printf.h"
 
-
 int printInt(va_list args) {
 	int n = va_arg(args, int);
 	int charsPrinted = 0;
