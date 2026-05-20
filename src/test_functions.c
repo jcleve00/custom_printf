@@ -42,7 +42,7 @@ void testInt(){
 void testFloat(){
     float test_float = 3.14159265;
     int chars_printed = customPrintf("Testing customPrintf with float, %%f: %f\n", test_float);
-    if (chars_printed == 42){
+    if (chars_printed == 46){ /* Testing customPrintf with float, %f = 37 chars 3.141592 = 8 chars \n = 1 char total = 46*/
         customPrintf("Success! Chars printed: %d\n", chars_printed);
     }
     else{
