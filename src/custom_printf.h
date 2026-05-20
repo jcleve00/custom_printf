@@ -13,6 +13,7 @@ int printChar(va_list args);
 int printString(va_list args);
 int printInt(va_list args);
 int printBinary(va_list args);
+int printFloat(va_list args);
 
 // Struct definition
 typedef struct format_specifier {
