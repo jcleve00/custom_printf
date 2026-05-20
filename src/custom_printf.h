@@ -21,12 +21,20 @@ typedef struct format_specifier {
 		{'b', printBinary},
 		{'\0', NULL}
 	};
-    
+
 // Function Prototypes
 int customPrintf(const char *string, ...);
 int printChar(va_list args);
 int printString(va_list args);
 int printInt(va_list args);
 int printBinary(va_list args);
+
+// Test Function Prototypes
+void testChar();
+void testString();
+void testInt();
+void testFloat();
+void testBinary();
+void testMultipleSpecifiers();
 
 #endif
