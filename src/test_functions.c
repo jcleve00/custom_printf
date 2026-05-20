@@ -3,7 +3,7 @@
 void testChar(){
     char test_char = 'A';
     int chars_printed = customPrintf("Testing customPrintf with char, %%c: %c\n", test_char);
-    if (chars_printed == 32){
+    if (chars_printed == 42){
         customPrintf("Success! Chars printed: %d\n", chars_printed);
     }
     else{
@@ -16,7 +16,7 @@ void testChar(){
 void testString(){
     char *test_string = "Hello, World!";
     int chars_printed = customPrintf("Testing customPrintf with string, %%s: %s\n", test_string);
-    if (chars_printed == 45){
+    if (chars_printed == 51){
         customPrintf("Success! Chars printed: %d\n", chars_printed);
     }
     else{
@@ -29,7 +29,7 @@ void testString(){
 void testInt(){
     int test_int = 1972;
     int chars_printed = customPrintf("Testing customPrintf with int, %%d: %d\n", test_int);
-    if (chars_printed == 34){
+    if (chars_printed == 40){
         customPrintf("Success! Chars printed: %d\n", chars_printed);
     }
     else{
@@ -55,7 +55,7 @@ void testFloat(){
 void testBinary(){
     int test_binary = 12;
     int chars_printed = customPrintf("Testing customPrintf with binary, %%b: %b\n", test_binary);
-    if (chars_printed == 37){
+    if (chars_printed == 43){
         customPrintf("Success! Chars printed: %d\n", chars_printed);
     }
     else{
@@ -70,7 +70,7 @@ void testMultipleSpecifiers(){
     char test_char = 'B';
     int test_int = 1972;
     int chars_printed = customPrintf("In %d, %s was used for the first time in documentation for the %c programming language.\n", test_int, test_string, test_char);
-    if (chars_printed == 82){
+    if (chars_printed == 101){
         customPrintf("Success! Chars printed: %d\n", chars_printed);
     }
     else{

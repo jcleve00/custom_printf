@@ -31,7 +31,7 @@ int printFloat(va_list args){
         }
 
         /* Print in reverse */
-        for (int j = 1; j >= 0; j--) {
+        for (int j = i - 1; j >= 0; j--) {
             chars_printed += write(1, &int_buffer[j], 1);
         }
         free(int_buffer);
