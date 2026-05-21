@@ -1,7 +1,7 @@
 #include "custom_printf.h"
 
-int printBinary(va_list args){
-    int n = va_arg(args, int);
+int printBinary(va_list *args){
+    int n = va_arg(*args, int);
     int binaryNum[32]; /* Array to store binary digits assuming 32 bits */
     int i = 0;
     int charsPrinted = 0;

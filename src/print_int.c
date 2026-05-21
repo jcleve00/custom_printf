@@ -1,7 +1,7 @@
 #include "custom_printf.h"
 
-int printInt(va_list args) {
-	int n = va_arg(args, int);
+int printInt(va_list *args) {
+	int n = va_arg(*args, int);
 	int charsPrinted = 0;
 	unsigned int num; /* use unsigned to safely handle conversion to positive */
 	
