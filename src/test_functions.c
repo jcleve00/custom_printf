@@ -75,7 +75,7 @@ void testMultipleSpecifiers(){
     int chars_printed = customPrintf("In %d, %s was used for the first time in documentation for the %c programming language.\n", test_int, test_string, test_char);
     
     /* TEMPORARY DEBUGGING LINE: */
-    printf("\nDEBUG: My function returned %d\n", chars_printed);
+    /* printf("\nDEBUG: My function returned %d\n", chars_printed); */
 
     /* Changed the chars_printed number to 100 per the printf() debug result */
     if (chars_printed == 100){
