@@ -1,10 +1,10 @@
 #include "custom_printf.h"
 
 
-int printString(va_list args){
+int printString(va_list *args){
     int chars_printed = 0;
-    char *string = va_arg(args, char*);
-
+    char *string = va_arg(*args, char*);
+    
     // Make sure there is string to loop through
     if (!string){
         string = "(null)";

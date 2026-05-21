@@ -9,16 +9,16 @@
 
 // Function Prototypes
 int customPrintf(const char *string, ...);
-int printChar(va_list args);
-int printString(va_list args);
-int printInt(va_list args);
-int printBinary(va_list args);
-int printFloat(va_list args);
+int printChar(va_list *args);
+int printString(va_list *args);
+int printInt(va_list *args);
+int printBinary(va_list *args);
+int printFloat(va_list *args);
 
 // Struct definition
 typedef struct format_specifier {
 	char specifier;
-	int (*function)(va_list);
+	int (*function)(va_list *); // Allows functions to accept va_list *
 } FormatSpec;
 
 extern FormatSpec specs[];

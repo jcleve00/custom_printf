@@ -1,8 +1,8 @@
 #include "custom_printf.h"
 
-int printFloat(va_list args){
+int printFloat(va_list *args){
     /* Float are promoted to double in variadic arguments */
-    double num = va_arg(args, double);
+    double num = va_arg(*args, double);
     int chars_printed = 0;
 
     /* Handle negative numbers */

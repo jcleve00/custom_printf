@@ -34,7 +34,7 @@ int customPrintf(const char *string, ...){
                 specifier = string[i + 1];
                 for (int j = 0; specs[j].specifier != '\0';j++){
                     if (specifier == specs[j].specifier){
-/* added chars_printed */ chars_printed += specs[j].function(args);
+/* added chars_printed */ chars_printed += specs[j].function(&args); // Accept reference to args
                     }
                 }
                 i++;
